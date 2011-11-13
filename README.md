@@ -10,7 +10,7 @@ browse the latest articles from [iDevBlogADay](http://idevblogaday.com) on the g
 
 USAGE
 -------------
-The Application does not parse the iDEvBlogADay RSS feed directly in the
+The Application does not parse the iDevBlogADay RSS feed directly in the
 application, it relies on a web-service (written in PHP) that parses the RSS
 and hands it to the app in JSON format.
 
@@ -19,6 +19,11 @@ is currently pointing to my own server. However you can upload the files
 to your own server that are to found in the sub-directory 
 "iDev Reader Serverside".
 
+FUTURE PLANS
+-------------
+*   iPad Compatibility
+*   Possiblitly to save articles locally (favorites)
+*   Share over twitter function
 
 LICENSE
 -------------
