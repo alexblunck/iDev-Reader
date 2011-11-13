@@ -32,5 +32,6 @@ You may use this piece of software as you please ;) Only restriction you may not
 sell/redistribute the included images.
 
 The App makes use of following 3rd party Classes:
+
 *   [SVHTTPRequest](https://github.com/samvermette/SVHTTPRequest)
 *   [SVProgressHUD](https://github.com/samvermette/SVProgressHUD)
