@@ -1,5 +1,6 @@
 iDev Reader
 =============
+![iDev Reader Icon](http://appserver.ablfx.com/idevreader/icon_256.png)
 
 
 INFO
@@ -23,7 +24,13 @@ FUTURE PLANS
 -------------
 *   iPad Compatibility
 *   Possiblitly to save articles locally (favorites)
-*   Share over twitter function
+*   Share over twitter / email function
 
 LICENSE
 -------------
+You may use this piece of software as you please ;) Only restriction you may not 
+sell/redistribute the included images.
+
+The App makes use of following 3rd party Classes:
+*   [SVHTTPRequest](https://github.com/samvermette/SVHTTPRequest)
+*   [SVProgressHUD](https://github.com/samvermette/SVProgressHUD)
