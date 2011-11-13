@@ -24,9 +24,6 @@
 		FF241D66146F50AA002C27CD /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FF241D63146F50AA002C27CD /* SVProgressHUD.bundle */; };
 		FF241D67146F50AA002C27CD /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FF241D65146F50AA002C27CD /* SVProgressHUD.m */; };
 		FF241D69146F50D5002C27CD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF241D68146F50D5002C27CD /* QuartzCore.framework */; };
-		FF241D70146F527A002C27CD /* SVModalWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF241D6C146F527A002C27CD /* SVModalWebViewController.m */; };
-		FF241D71146F527A002C27CD /* SVWebViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FF241D6D146F527A002C27CD /* SVWebViewController.bundle */; };
-		FF241D72146F527A002C27CD /* SVWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF241D6F146F527A002C27CD /* SVWebViewController.m */; };
 		FF241D74146F52DE002C27CD /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF241D73146F52DE002C27CD /* MessageUI.framework */; };
 		FF241D77146F544B002C27CD /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF241D76146F544B002C27CD /* CustomCell.m */; };
 		FF241D7A146F5467002C27CD /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF241D79146F5467002C27CD /* CustomCell.xib */; };
@@ -77,11 +74,6 @@
 		FF241D64146F50AA002C27CD /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		FF241D65146F50AA002C27CD /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		FF241D68146F50D5002C27CD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		FF241D6B146F527A002C27CD /* SVModalWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVModalWebViewController.h; sourceTree = "<group>"; };
-		FF241D6C146F527A002C27CD /* SVModalWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVModalWebViewController.m; sourceTree = "<group>"; };
-		FF241D6D146F527A002C27CD /* SVWebViewController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVWebViewController.bundle; sourceTree = "<group>"; };
-		FF241D6E146F527A002C27CD /* SVWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVWebViewController.h; sourceTree = "<group>"; };
-		FF241D6F146F527A002C27CD /* SVWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVWebViewController.m; sourceTree = "<group>"; };
 		FF241D73146F52DE002C27CD /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		FF241D75146F544B002C27CD /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		FF241D76146F544B002C27CD /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
@@ -196,7 +188,6 @@
 		FF241D51146F4D02002C27CD /* 3rd Party Sources */ = {
 			isa = PBXGroup;
 			children = (
-				FF241D6A146F527A002C27CD /* SVWebViewController */,
 				FF241D62146F50AA002C27CD /* SVProgressHUD */,
 				FF241D52146F4D22002C27CD /* SVHTTPRequest */,
 			);
@@ -241,18 +232,6 @@
 				FF241D65146F50AA002C27CD /* SVProgressHUD.m */,
 			);
 			path = SVProgressHUD;
-			sourceTree = "<group>";
-		};
-		FF241D6A146F527A002C27CD /* SVWebViewController */ = {
-			isa = PBXGroup;
-			children = (
-				FF241D6B146F527A002C27CD /* SVModalWebViewController.h */,
-				FF241D6C146F527A002C27CD /* SVModalWebViewController.m */,
-				FF241D6D146F527A002C27CD /* SVWebViewController.bundle */,
-				FF241D6E146F527A002C27CD /* SVWebViewController.h */,
-				FF241D6F146F527A002C27CD /* SVWebViewController.m */,
-			);
-			path = SVWebViewController;
 			sourceTree = "<group>";
 		};
 		FF241D78146F544F002C27CD /* Custom Cell */ = {
@@ -343,7 +322,6 @@
 				FF241D5A146F4D22002C27CD /* CHANGELOG.md in Resources */,
 				FF241D5C146F4D22002C27CD /* README.md in Resources */,
 				FF241D66146F50AA002C27CD /* SVProgressHUD.bundle in Resources */,
-				FF241D71146F527A002C27CD /* SVWebViewController.bundle in Resources */,
 				FF241D7A146F5467002C27CD /* CustomCell.xib in Resources */,
 				FF241D7E146F57C3002C27CD /* cell_bg.png in Resources */,
 				FF241D7F146F57C3002C27CD /* cell_bg@2x.png in Resources */,
@@ -380,8 +358,6 @@
 				FF241D5D146F4D22002C27CD /* SVHTTPRequest.m in Sources */,
 				FF241D61146F4E57002C27CD /* Article.m in Sources */,
 				FF241D67146F50AA002C27CD /* SVProgressHUD.m in Sources */,
-				FF241D70146F527A002C27CD /* SVModalWebViewController.m in Sources */,
-				FF241D72146F527A002C27CD /* SVWebViewController.m in Sources */,
 				FF241D77146F544B002C27CD /* CustomCell.m in Sources */,
 				FF241D8F146F60AE002C27CD /* ArticleViewController.m in Sources */,
 			);
@@ -489,6 +465,7 @@
 				FF241D4C146F4852002C27CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
