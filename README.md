@@ -35,3 +35,8 @@ The App makes use of following 3rd party Classes:
 
 *   [SVHTTPRequest](https://github.com/samvermette/SVHTTPRequest)
 *   [SVProgressHUD](https://github.com/samvermette/SVProgressHUD)
+
+SCREENSHOTS
+-------------
+![Screenshot 1](http://appserver.ablfx.com/idevreader/screen1.png)
+![Screenshot 2](http://appserver.ablfx.com/idevreader/screen2.png)
