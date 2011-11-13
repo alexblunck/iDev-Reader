@@ -38,5 +38,6 @@ The App makes use of following 3rd party Classes:
 
 SCREENSHOTS
 -------------
-![Screenshot 1](http://appserver.ablfx.com/idevreader/screen1.png)
-![Screenshot 2](http://appserver.ablfx.com/idevreader/screen2.png)
+![Screenshot 1](http://appserver.ablfx.com/idevreader/screen1.jpg)
+
+![Screenshot 2](http://appserver.ablfx.com/idevreader/screen2.jpg)
