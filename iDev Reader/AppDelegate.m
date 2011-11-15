@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 #import "MasterTableViewController.h"
+#import "FavoritesTableViewController.h"
 
 @implementation AppDelegate
 
@@ -30,21 +31,36 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackTranslucent];
+    
     ///////////////////////////////////////////////////////////////////////////////////////////////////////
     ////iPhone Version/////////////////////////////////////////////////////////////////////////////////////
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
         MasterTableViewController *tableViewController = [[MasterTableViewController alloc] init];
         UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tableViewController];
+        navigationController.tabBarItem = [[[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemMostRecent tag:3] autorelease];
+        navigationController.tabBarItem.title = @"Articles";
+        
+        FavoritesTableViewController *favTableViewController = [[FavoritesTableViewController alloc] init];
+        UINavigationController *favNavigationController = [[UINavigationController alloc] initWithRootViewController:favTableViewController];
+        favNavigationController.tabBarItem = [[[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFavorites tag:3] autorelease];
+        favNavigationController.tabBarItem.title = @"Favorites";
         
         UIImage *image = [UIImage imageNamed:@"navbar.png"];
         [navigationController.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
+        [favNavigationController.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
 
         navigationController.navigationBar.layer.shadowOpacity = 0.6;
         navigationController.navigationBar.layer.shadowRadius = 3.0;
         navigationController.navigationBar.layer.shadowColor = [UIColor blackColor].CGColor;
         navigationController.navigationBar.layer.shadowOffset = CGSizeMake(1.0, 1.0);
         
-        [self.window setRootViewController:navigationController];
+        UITabBarController *tabBarController = [[UITabBarController alloc] init];
+        tabBarController.viewControllers = [NSArray arrayWithObjects:navigationController, favNavigationController, nil];
+        
+        [self.window setRootViewController:tabBarController];
+        
+        //[self.window setRootViewController:navigationController];
     } 
     ///////////////////////////////////////////////////////////////////////////////////////////////////////
     ///////////////////////////////////////////////////////////////////////////////////////////////////////

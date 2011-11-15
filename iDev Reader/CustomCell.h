@@ -11,5 +11,6 @@
 @interface CustomCell : UITableViewCell
 
 @property (nonatomic, retain) IBOutlet UILabel *titleLabel;
+@property (nonatomic, retain) IBOutlet UIButton *deleteButton;
 
 @end

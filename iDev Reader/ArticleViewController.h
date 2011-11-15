@@ -15,4 +15,6 @@
 @property (nonatomic, retain) IBOutlet UIWebView *webView;
 @property (nonatomic, retain) Article *article;
 
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+
 @end

@@ -10,7 +10,7 @@
 
 @implementation CustomCell
 
-@synthesize titleLabel;
+@synthesize titleLabel, deleteButton;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
