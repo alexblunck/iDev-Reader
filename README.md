@@ -7,6 +7,7 @@ INFO
 -------------
 "iDev Reader" is simple little App for iOS that'll give you the ability to
 browse the latest articles from [iDevBlogADay](http://idevblogaday.com) on the go.
+You can save articles you want to read later in a favorites section!
 
 
 USAGE
@@ -23,7 +24,7 @@ to your own server that are to found in the sub-directory
 FUTURE PLANS
 -------------
 *   iPad Compatibility
-*   Possiblitly to save articles locally (favorites)
+*   Possiblitly to save articles locally (favorites) [DONE]
 *   Share over twitter / email function
 
 LICENSE
