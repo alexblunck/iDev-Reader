@@ -21,7 +21,7 @@
     
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     
-    [self.tableView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"table_bg.png"]]];
+    [self.tableView setBackgroundColor:[UIColor colorWithRed:0.408 green:0.478 blue:0.471 alpha:1.000]];
     
     //Reload Button
     UIImage *buttonImage = [UIImage imageNamed:@"reload_button.png"];

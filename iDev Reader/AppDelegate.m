@@ -55,6 +55,11 @@
         navigationController.navigationBar.layer.shadowColor = [UIColor blackColor].CGColor;
         navigationController.navigationBar.layer.shadowOffset = CGSizeMake(1.0, 1.0);
         
+        favNavigationController.navigationBar.layer.shadowOpacity = 0.6;
+        favNavigationController.navigationBar.layer.shadowRadius = 3.0;
+        favNavigationController.navigationBar.layer.shadowColor = [UIColor blackColor].CGColor;
+        favNavigationController.navigationBar.layer.shadowOffset = CGSizeMake(1.0, 1.0);
+        
         UITabBarController *tabBarController = [[UITabBarController alloc] init];
         tabBarController.viewControllers = [NSArray arrayWithObjects:navigationController, favNavigationController, nil];
         
