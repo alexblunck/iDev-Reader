@@ -50,7 +50,8 @@
         id objects = [response valueForKey:@"articles"];
         for (id object in objects) {
             Article *article = [[Article alloc] init];
-            article.article_title = [object valueForKey:@"article_title"];
+
+            article.article_title = [object valueForKey:@"article_title"];;
             article.article_url = [object valueForKey:@"article_url"];
             [self.tableDataArray addObject:article];
         }
@@ -107,7 +108,7 @@
     [cell.deleteButton setHidden:YES];
     
     Article *article = [self.tableDataArray objectAtIndex:indexPath.row];
-    [[cell titleLabel] setText:article.article_title];
+    //[[cell titleLabel] setText:article.article_title];
     
     return cell;
 }

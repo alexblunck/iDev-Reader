@@ -8,8 +8,11 @@
 	$articlesArray = array();
 	foreach ($rssFeed as $value) {
 
+		$title = $value['title'];
+		//echo $title;
+		
 		$articlesArray[] = array('article_url' => $value['link'],
-						   'article_title' => $value['title']
+						   'article_title' => $title
 						  );
 						  
 
