@@ -108,7 +108,7 @@
     [cell.deleteButton setHidden:YES];
     
     Article *article = [self.tableDataArray objectAtIndex:indexPath.row];
-    //[[cell titleLabel] setText:article.article_title];
+    [[cell titleLabel] setText:article.article_title];
     
     return cell;
 }
