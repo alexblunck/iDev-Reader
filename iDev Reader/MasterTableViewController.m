@@ -50,8 +50,15 @@
         id objects = [response valueForKey:@"articles"];
         for (id object in objects) {
             Article *article = [[Article alloc] init];
-
-            article.article_title = [object valueForKey:@"article_title"];;
+            
+            id title = [object valueForKey:@"article_title"];
+            if ([title respondsToSelector:@selector(length)]) {
+                article.article_title = [object valueForKey:@"article_title"];
+            } else {
+                article.article_title = [NSString stringWithFormat:@"PARSE ERROR - %@", [object valueForKey:@"article_url"]];
+            }
+            
+            
             article.article_url = [object valueForKey:@"article_url"];
             [self.tableDataArray addObject:article];
         }
@@ -108,7 +115,12 @@
     [cell.deleteButton setHidden:YES];
     
     Article *article = [self.tableDataArray objectAtIndex:indexPath.row];
-    [[cell titleLabel] setText:article.article_title];
+    
+    if (article.article_title.length > 1) {
+         [[cell titleLabel] setText:article.article_title];
+    }
+    
+   
     
     return cell;
 }
