@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set('GMT');	
 
 function fetch_rss_feed($url, $numposts) {
 			
