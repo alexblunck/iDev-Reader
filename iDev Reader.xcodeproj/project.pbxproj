@@ -171,7 +171,6 @@
 				FF241D4D146F4926002C27CD /* iPhone */,
 				FF241D42146F4852002C27CD /* AppDelegate.h */,
 				FF241D43146F4852002C27CD /* AppDelegate.m */,
-				FF241D45146F4852002C27CD /* iDev_Reader.xcdatamodeld */,
 				FF241D3A146F4852002C27CD /* Supporting Files */,
 			);
 			path = "iDev Reader";
@@ -237,6 +236,7 @@
 		FF241D5E146F4E46002C27CD /* Modal */ = {
 			isa = PBXGroup;
 			children = (
+				FF241D45146F4852002C27CD /* iDev_Reader.xcdatamodeld */,
 				FF241D5F146F4E57002C27CD /* Article.h */,
 				FF241D60146F4E57002C27CD /* Article.m */,
 				FFD584591472049300CE154A /* Favorite.h */,
