@@ -318,7 +318,7 @@
 		FF241D24146F4852002C27CD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0440;
 				ORGANIZATIONNAME = Ablfx;
 			};
 			buildConfigurationList = FF241D27146F4852002C27CD /* Build configuration list for PBXProject "iDev Reader" */;

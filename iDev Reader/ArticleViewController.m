@@ -108,7 +108,8 @@
     [self.webView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"table_bg.png"]]];
     
     
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:article.article_url]]];
+    NSString *readabilityUrl = [NSString stringWithFormat:@"http://www.readability.com/read?url=%@", article.article_url];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:readabilityUrl]]];
     
 }
 
